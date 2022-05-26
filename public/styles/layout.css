@@ -57,9 +57,22 @@ body {
   height: 150px;
   padding: 1.5em;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: space-between;
+  align-items: center;
 
+}
+
+.tweet-container > header > div {
+  width: auto;
+  color: aqua;
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.tweet-container > header > div > img {
+  margin-right: 20px;
+    
 }
 
 .tweet-container > footer > div {
@@ -68,6 +81,21 @@ body {
 
 .tweet-container > footer > div > i:hover {
   color: goldenrod;
+}
+
+.tweet-container > main {
+  display: flex;
+  justify-content: flex-start;
+  padding: 1.5em;
+
+}
+
+.error {
+  width: 50%;
+  color: red;
+  display:none;
+  justify-content: center;
+  
 }
 
 /*
