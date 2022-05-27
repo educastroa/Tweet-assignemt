@@ -6,7 +6,10 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -19,7 +22,7 @@ body {
   background-color: #f4f1ec;
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
-  
+
 }
 
 .container {
@@ -28,7 +31,7 @@ body {
   margin: auto;
   flex-direction: column;
   align-items: center;
-  
+
 }
 
 .tweet-container {
@@ -36,10 +39,10 @@ body {
   display: block;
   border: solid;
   border-color: black;
-  
+
 }
 
-.tweet-container > footer {
+.tweet-container>footer {
   width: 95%;
   margin: auto;
   display: flex;
@@ -53,7 +56,7 @@ body {
   font-size: smaller;
 }
 
-.tweet-container > header {
+.tweet-container>header {
   height: 150px;
   padding: 1.5em;
   display: flex;
@@ -62,27 +65,27 @@ body {
 
 }
 
-.tweet-container > header > div {
+.tweet-container>header>div {
   width: auto;
   display: flex;
   flex-direction: row;
-  
+
 }
 
-.tweet-container > header > div > img {
+.tweet-container>header>div>img {
   margin-right: 20px;
-    
+
 }
 
-.tweet-container > footer > div {
+.tweet-container>footer>div {
   color: #4056A1;
 }
 
-.tweet-container > footer > div > i:hover {
+.tweet-container>footer>div>i:hover {
   color: goldenrod;
 }
 
-.tweet-container > main {
+.tweet-container>main {
   display: flex;
   justify-content: flex-start;
   padding: 1.5em;
@@ -90,15 +93,15 @@ body {
 }
 
 .tweet-container:hover {
-  border: 5px solid rgb(22, 150, 107);
+  box-shadow: 0 3px 10px #007d5a;
 }
 
 .error {
   width: 70%;
   color: red;
-  display:none;
+  display: none;
   justify-content: center;
-  
+
 }
 
 
@@ -117,6 +120,7 @@ body {
   }
 
 }
+
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */

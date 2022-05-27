@@ -1,44 +1,75 @@
-.bar{
+.bar {
   height: 120px;
-  background-color: #4056A1;
+  background-color: #007d5a;
+  background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
   color: #FFFFFF;
   padding: 1.5em;
-  display:flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;  
+  position: sticky;
   width: 100%;
   top: 0;
-  }
-  
+}
+
 .bar i {
+  margin-left: 30px;
   color: red;
+  width: 50px;
+  height: 50px;
   align-items: baseline;
   animation-name: doublearrow;
-  
+  position: relative;
+  animation: doubleArrow 2s linear infinite;
+  /* animation set */
+  animation-play-state: paused;
+  ;
 }
 
-@keyframes doublearrow {
-  
-    0%   {background-color:red; left:0px; top:0px;}
-    25%  {background-color:yellow; left:200px; top:0px;}
-    50%  {background-color:blue; left:200px; top:200px;}
-    75%  {background-color:green; left:0px; top:200px;}
-    100% {background-color:red; left:0px; top:0px;}
-  
+.bar i:hover {
+  animation-play-state: running;
 }
 
+@keyframes doubleArrow {
+  0% {
+    down: 20px;
+    top: 0px;
+  }
 
-.logo{
+  25% {
+    down: 0px;
+    top: 20px;
+  }
+
+  50% {
+    down: 20px;
+    top: 0px
+  }
+
+  100% {
+    down: 0px;
+    top: 20px;
+  }
+}
+
+.logo {
   font-family: 'Bungee', cursive;
-  
+
 }
 
 .test {
+  margin-top: 1em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
 }
-  
+
+@media only screen and (min-width: 1024px) {
+
+  .bar {
+    background-color: #4056A1;
+    background-image: none;
+  }
+}

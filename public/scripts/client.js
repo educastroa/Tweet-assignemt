@@ -1,17 +1,6 @@
-/*
- * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
- */
-
-// Test / driver code (temporary)
-
-
 
 const renderTweets = function (tweets) {
-  // loops through tweets
-  // calls createTweetElement for each tweet
-  // takes return value and appends it to the tweets container
+
   $('#tweets-container').empty();
   tweets.forEach((tweet) => {
     const test = createTweetElement(tweet);
@@ -20,8 +9,6 @@ const renderTweets = function (tweets) {
   });
 
 };
-
-
 
 
 const createTweetElement = function (tweetData) {
@@ -84,14 +71,14 @@ $(document).ready(function () {
       <p class="error"><i class="fa-solid fa-circle-exclamation">
       </i>  You cannot post an empty tweet  
       <i class="fa-solid fa-circle-exclamation"></i></p>`);
-      $('.error').slideDown(500)
-      
-          setTimeout(() => {
-            $('.error').slideUp(500, () => {
-              $('.error').remove();
-            });
-          }, 3000);
-          
+      $('.error').slideDown(500);
+
+      setTimeout(() => {
+        $('.error').slideUp(500, () => {
+          $('.error').remove();
+        });
+      }, 3000);
+
       return false;
     }
     if (characters.length > 140) {
@@ -99,13 +86,13 @@ $(document).ready(function () {
       <p class="error"><i class="fa-solid fa-circle-exclamation">
       </i>  Tweet exceeds 140 characters  
       <i class="fa-solid fa-circle-exclamation"></i></p>`);
-      $('.error').slideDown(500)
-      
-          setTimeout(() => {
-            $('.error').slideUp(500, () => {
-              $('.error').remove();
-            });
-          }, 2000);
+      $('.error').slideDown(500);
+
+      setTimeout(() => {
+        $('.error').slideUp(500, () => {
+          $('.error').remove();
+        });
+      }, 2000);
       return false;
     }
     else {
@@ -114,7 +101,7 @@ $(document).ready(function () {
           loadTweets();
           $('#tweet-text').val('');
           $('.counter').val(140);
-      });
+        });
     };
   });
 });

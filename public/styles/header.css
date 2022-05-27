@@ -1,19 +1,19 @@
 .header {
   height: 400px;
   background-color: #007d5a;
-  background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");;
+  background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+
 }
 
 @media only screen and (min-width: 1024px) {
   .header {
-  width: 50%;
-  margin-left: 3em;
-  margin-top: 7em;
-  } 
+    width: 50%;
+    margin-left: 3em;
+    margin-top: 7em;
+  }
 
 }
