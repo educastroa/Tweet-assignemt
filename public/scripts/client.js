@@ -90,7 +90,7 @@ $(document).ready(function () {
             $('.error').slideUp(500, () => {
               $('.error').remove();
             });
-          }, 2000);
+          }, 3000);
           
       return false;
     }

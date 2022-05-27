@@ -64,7 +64,6 @@ body {
 
 .tweet-container > header > div {
   width: auto;
-  color: aqua;
   display: flex;
   flex-direction: row;
   
@@ -90,14 +89,34 @@ body {
 
 }
 
+.tweet-container:hover {
+  border: 5px solid rgb(22, 150, 107);
+}
+
 .error {
-  width: 50%;
+  width: 70%;
   color: red;
   display:none;
   justify-content: center;
   
 }
 
+
+
+@media only screen and (min-width: 1024px) {
+
+  .screen-adj {
+    display: flex;
+    gap: 5em;
+
+  }
+
+  .container {
+    margin-top: 7em;
+    margin-right: 3em;
+  }
+
+}
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
